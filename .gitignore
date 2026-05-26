@@ -8,7 +8,7 @@ app/build/
 
 # Gradle
 .gradle/
-gradle/wrapper/gradle-wrapper.jar
+# Note: gradle-wrapper.jar IS committed so anyone can build without Gradle pre-installed
 
 # Local config (machine-specific)
 local.properties
