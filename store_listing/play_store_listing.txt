@@ -1,0 +1,132 @@
+==============================================================
+  WAKER — PLAY STORE LISTING COPY
+  Paste each section into the corresponding Play Console field
+==============================================================
+
+──────────────────────────────────────────────────────────────
+APP TITLE  (max 30 chars)
+──────────────────────────────────────────────────────────────
+Waker – Keep Servers Alive
+
+──────────────────────────────────────────────────────────────
+SHORT DESCRIPTION  (max 80 chars)
+──────────────────────────────────────────────────────────────
+Scheduled HTTP pings to keep your free-tier servers from sleeping.
+
+──────────────────────────────────────────────────────────────
+FULL DESCRIPTION  (max 4 000 chars)
+──────────────────────────────────────────────────────────────
+Free-tier cloud services (Render, Railway, Fly.io, Glitch, etc.) put your
+server to sleep after a few minutes of inactivity. Waker keeps them awake
+by sending lightweight HTTP GET pings on a schedule you control — even when
+your phone screen is off.
+
+KEY FEATURES
+
+• Multiple ping events — add as many URLs as you need, each with its own
+  name and interval.
+• Randomised intervals — set a min and max delay (in minutes) to avoid
+  hitting servers on a fixed, predictable schedule.
+• Persistent foreground service — Waker runs reliably in the background
+  using an Android foreground service with a status notification.
+• Boot-start — if events are active when you reboot, Waker restarts itself
+  automatically.
+• Battery-smart — requests battery-optimisation exclusion so Android does
+  not kill the service while the screen is off.
+• Live status in notification — see the last HTTP response code for each
+  event at a glance.
+• Zero ads, zero analytics — no trackers, no cloud account, no data
+  leaves your device.
+
+HOW IT WORKS
+
+1. Tap the + button to add a ping event.
+2. Enter a name, the URL of your server's health endpoint (or any URL),
+   and the min/max interval in minutes.
+3. Toggle the switch to enable it. Waker starts pinging immediately and
+   continues in the background until you disable it.
+
+PERMISSIONS EXPLAINED
+
+• Internet — to send the pings you configure.
+• Foreground Service — required by Android to run a background task with
+  a visible notification.
+• Receive Boot Completed — restarts active pings after a reboot.
+• Ignore Battery Optimizations — prevents Android from suspending the
+  ping loop when the screen is off.
+• Post Notifications — shows the status notification (Android 13+).
+
+No personal data is collected. Everything is stored locally on your device.
+
+──────────────────────────────────────────────────────────────
+CATEGORY
+──────────────────────────────────────────────────────────────
+Tools
+
+──────────────────────────────────────────────────────────────
+TAGS / KEYWORDS  (suggested)
+──────────────────────────────────────────────────────────────
+server keep-alive, ping, uptime, Render, Railway, free tier, background service,
+HTTP ping, server monitor, scheduled ping
+
+──────────────────────────────────────────────────────────────
+PRIVACY POLICY URL
+──────────────────────────────────────────────────────────────
+https://pritam-ray.github.io/waker/privacy_policy.html
+
+──────────────────────────────────────────────────────────────
+DATA SAFETY  (answers for the Play Console form)
+──────────────────────────────────────────────────────────────
+"Does your app collect or share any of the required user data types?"
+  → NO
+
+"Is all of the user data collected by your app encrypted in transit?"
+  → N/A (no data collected)
+
+"Do you provide a way for users to request that their data is deleted?"
+  → N/A (no data collected; users delete data by removing events in-app
+         or uninstalling)
+
+──────────────────────────────────────────────────────────────
+REQUEST_IGNORE_BATTERY_OPTIMIZATIONS — DECLARATION TEXT
+(Play Console → App content → Permissions → Battery optimization)
+──────────────────────────────────────────────────────────────
+Waker is a foreground-service app whose sole purpose is to send scheduled
+HTTP GET requests to user-defined URLs. The core functionality — maintaining
+configured ping intervals even when the device screen is off — requires that
+Android does not suspend the foreground service. Without battery-optimisation
+exclusion, Android may defer or kill the service, causing missed pings and
+defeating the app's purpose. The permission is requested with an in-app
+rationale dialog before the system prompt is shown, giving users full control.
+
+──────────────────────────────────────────────────────────────
+CONTENT RATING QUESTIONNAIRE  (IARC answers)
+──────────────────────────────────────────────────────────────
+Violence:           None
+Sexual content:     None
+Language:           None
+Controlled subs:    None
+User interaction:   None (no social features, no user-to-user contact)
+Location sharing:   No
+Personal info:      No
+Digital purchases:  No
+→ Expected rating:  Everyone (E) / PEGI 3 / USK 0
+
+──────────────────────────────────────────────────────────────
+SCREENSHOT SUGGESTIONS  (take these on a physical device or emulator)
+──────────────────────────────────────────────────────────────
+1. Empty state — app open with "No ping events yet" message and the + FAB
+2. Add event dialog — filled in with a sample name ("My Render API") and URL
+3. Main list — 2-3 events visible, one enabled (toggle on), one disabled
+4. Notification shade — showing "Waker – 2 events active" persistent notification
+5. Battery dialog — the in-app rationale dialog before the system prompt
+
+Required sizes (phone): at least 2 screenshots, 16:9 or 9:16
+  Minimum: 320 px on shortest side
+  Maximum: 3 840 px on longest side
+
+Feature Graphic (required): 1 024 × 500 px PNG or JPG
+  Suggestion: dark (#1B1B1B) background, green radar icon centred,
+  "Waker" in white at bottom, tagline "Keep your servers awake" in green
+
+==============================================================

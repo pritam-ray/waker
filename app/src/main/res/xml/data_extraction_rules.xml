@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Android 12+ cloud backup / device-to-device transfer rules.
+    We include the SharedPreferences store (ping events) so users don't lose
+    their configured events when they switch devices.
+    No sensitive credentials are stored — only user-supplied URLs and names.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="sharedpref" path="waker_events.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="sharedpref" path="waker_events.xml" />
+    </device-transfer>
+</data-extraction-rules>

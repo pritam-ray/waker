@@ -1,0 +1,29 @@
+
+
+# Built outputs
+build/
+app/build/
+*.apk
+*.aab
+
+# Gradle
+.gradle/
+gradle/wrapper/gradle-wrapper.jar
+
+# Local config (machine-specific)
+local.properties
+*.iml
+.idea/
+
+# Signing credentials — NEVER commit these
+keystore.properties
+*.keystore
+*.jks
+*.p12
+
+# Ignore vscode AI rules
+.github/instructions/codacy.instructions.md
+
+# Store listing generated assets (no binaries)
+store_listing/*.png
+store_listing/*.jpg
